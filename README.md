@@ -1,2 +1,2 @@
-# Text-killer game
+# Text killer game
 
