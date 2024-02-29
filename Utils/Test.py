@@ -1,5 +1,5 @@
 import pytest
-from GraphSystem import graph_system
+from Utils import graph_system
 
 def test_graph_create():
     g = graph_system.Graph()

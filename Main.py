@@ -1,4 +1,4 @@
-from GraphSystem.graph_system import *
+from Utils.graph_system import *
 
 graph1 = Graph()
 graph1.create_node(['amogus1'])
