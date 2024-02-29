@@ -19,13 +19,15 @@ class Graph:
         self.edges = []
 
     def create_node(self, node_data: list) -> Node:
-        self.nodes.append(Node(node_data, [])) # TODO: node returning
+        self.nodes.append(Node(node_data, []))
+        return self.nodes[-1]
 
     def create_edge(self, edge_data: list, end_nodes: list[Node]) -> Edge:
         edge = Edge(edge_data, end_nodes)
         self.edges.append(edge)
         for i in end_nodes:
-            i.edges.append(edge) # TODO: edge returning
+            i.edges.append(edge)
+        return self.edges[-1]
 
     def delete_node(self, node: Node):
         self.nodes.remove(node)
